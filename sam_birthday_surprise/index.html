@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#180f2b">
+<title>Heyy Thangoo!! ✨ A little world for Sam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<canvas id="sparkles" aria-hidden="true"></canvas>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Back to beginning"><span class="brand-heart">♡</span> for sam, with care</a>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle music" title="Music is optional">♫ <span id="musicLabel">Music</span></button>
+</header>
+
+<main>
+<section class="hero section" id="home">
+  <div class="eyebrow"><span class="eyebrow-dot"></span> a tiny universe made just for you</div>
+  <h1>Heyy <em>Thangoo!!</em></h1>
+  <p class="hero-sub">Some people become a little piece of home.<br><span>And this little world is for one of them.</span></p>
+  <div class="sky-scene" id="skyScene">
+    <div class="moon"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+    <div class="star star-a">✦</div><div class="star star-b">✧</div><div class="star star-c">✦</div>
+    <div class="cupid" id="cupid" aria-label="Cupid preparing a heart arrow">
+      <div class="halo"></div><div class="wing wing-left">◜</div><div class="wing wing-right">◝</div>
+      <div class="cupid-body">🤍</div><div class="cupid-face">☺</div>
+      <div class="bow">⌒</div><div class="arrow">━━━━➤</div>
+    </div>
+    <div class="balloon-wrap" id="balloonWrap">
+      <div class="heart-balloon" id="heartBalloon"><span>♡</span></div>
+      <div class="balloon-string"></div>
+    </div>
+    <div class="ground-glow"></div>
+    <div class="burst-text" id="burstText"><span>HAPPY</span><strong>BIRTHDAY</strong><small>Sam · Thangoo ♡</small></div>
+  </div>
+  <p class="hero-note" id="heroNote">A little surprise is waiting for you.</p>
+  <button class="primary-btn" id="startSurprise">Open your little world <span>↗</span></button>
+  <p class="tiny-hint">Best experienced with sound on, but it's completely optional.</p>
+</section>
+
+<section class="intro section reveal" id="intro">
+  <p class="section-kicker">before anything else</p>
+  <h2>It started with one<br><em>random conversation.</em></h2>
+  <div class="story-card">
+    <div class="quote-mark">“</div>
+    <p>Same class. So many ordinary days. And then one random night on Instagram, we started talking… and somehow, without planning it, you became someone I could tell things to, laugh with, and feel comfortable around.</p>
+    <p class="tamil-line">“Theriyama close aana sila per, namakku romba special aayiduvaanga.”</p>
+    <span class="card-signature">— one memory at a time ♡</span>
+  </div>
+</section>
+
+<section class="memories section reveal" id="memories">
+  <p class="section-kicker">little moments, big meaning</p>
+  <h2>Our little <em>memory lane</em></h2>
+  <p class="section-description">Four real moments, each holding a little piece of our story. Tap any photo to read its memory. ♡</p>
+  <div class="memory-grid">
+    <button class="memory-card" data-title="Our wedding photoshoot 📸" data-note="Hey thangoo, indha wedding photoshoot memory romba special. Namma rendu perum same frame la irundha indha photo paakumbodhu, namma friendship la irundha closeness nyabagam varudhu. Sila photos just photos illa — namma life la irundha oru azhagana moment ah preserve pannum. This one is one of those for me. ♡">
+      <div class="photo-slot"><img src="assets/photos/wedding-photoshoot.png" alt="Our wedding photoshoot memory" loading="lazy"></div><span class="memory-label">Our little photoshoot</span><span class="memory-sub">“A frame I'll always remember.”</span>
+    </button>
+    <button class="memory-card" data-title="Class la cute-ah irundha Sam 🤍" data-note="Second photo la cute-ah iruka Sam ehhh!! 😂🤍 Indha maari random class moments dhaan namma days ah special aakuchu. Sometimes periya plans venam; nee pakkathula irundhu siricha oru chinna moment kooda enakku happy memory aagidum. Always keep that smile, thangoo.">
+      <div class="photo-slot photo-slot-lilac"><img src="assets/photos/classroom-cute-sam.png" alt="Sam sitting in class" loading="lazy"></div><span class="memory-label">Classroom cutie</span><span class="memory-sub">“That little smile, that little moment.”</span>
+    </button>
+    <button class="memory-card" data-title="Our first outing & Lulu shopping 🛍️" data-note="First time namma veliya pona memory! Lulu la shopping pannom, PSG Arts College la nee enna two hours wait panna vecha 😂 — aana naan kochukala. Un kooda spend panna time dhaan mukkiyam nu thonuchu. Andha naal la irundha happiness ah naan marakka maaten. This selfie is a tiny reminder of that day. ♡">
+      <div class="photo-slot photo-slot-gold"><img src="assets/photos/first-outing-selfie.png" alt="Our first outing selfie" loading="lazy"></div><span class="memory-label">Our first outing</span><span class="memory-sub">“Two hours waiting, still worth it.”</span>
+    </button>
+    <button class="memory-card" data-title="Sam and her family — and my favourite SK 🥹" data-note="Indha photo enakku romba favourite, especially SK uncle irukradhaala. 🥹🤍 Un family kooda irukkura indha moment paakumbodhu, un life la irukkura people and memories ellam unakku evlo precious nu thonum. Unakku eppovume love, peace, and happiness neraya kidaikkanum nu wish panren, thangoo.">
+      <div class="photo-slot photo-slot-rose"><img src="assets/photos/sam-family.png" alt="Sam with her family" loading="lazy"></div><span class="memory-label">My favourite SK 🤍</span><span class="memory-sub">“A family memory close to my heart.”</span>
+    </button>
+  </div>
+  <div class="video-memory">
+    <p class="section-kicker">a bonus memory</p>
+    <h3>That Calicut tea-glass incident ☕😂</h3>
+    <p>Social table la tea glass break panna andha moment-um namma story oda part dhaan. Some memories are emotional; some are just too funny to forget.</p>
+    <video controls playsinline preload="metadata" poster="assets/photos/first-outing-selfie.png"><source src="assets/photos/calic-ut-tea-glass.mp4" type="video/mp4">Your browser does not support video playback.</video>
+  </div>
+  <p class="photo-tip">Every photo here is one you shared. More memories can be added when you get your laptop back. ♡</p>
+</section>
+
+<section class="letter-section section reveal" id="letter">
+  <p class="section-kicker">a letter, from my heart</p>
+  <h2>For you, <em>Sam.</em></h2>
+  <div class="letter-envelope" id="letterEnvelope">
+    <div class="envelope-flap"></div><div class="envelope-seal">♡</div>
+    <div class="letter-paper">
+      <p class="letter-greeting">Heyy thangoo!!</p>
+      <div class="letter-copy">
+        <p>Happy birthday, Sam uh. 🤍</p>
+        <p>Indha website la irukkura ovvoru word-um, ovvoru memory-um, unakku enna sollanum nu romba naala manasula vechurundha feelings dhaan.</p>
+        <p>Namma epdi close aanom nu yosicha, oru random night Instagram conversation la start aachu. Aana konjam konjama nee enakku romba comfortable-aana person aayita. Un kitta en secrets solla mudinjadhu; un problems-um en kitta share panna. Sila neram nee pakkathula irundha podhum, lonely-a irundha feeling konjam koranjidum. <em>Un kooda irundha sila moments enakku home maari irundhuchu.</em></p>
+        <p>Onam la edutha photos, class la serndhu irundha days, calls, namma thaniya meet panna moments, Calicut days — idhellam enakku precious. Naan unakku help pannadhu ellam count panni solla illa. Unna care panna thonuchu, nee happy-a irukkanum nu thonuchu. Adhan panninen. Adhu enakku natural-a irundhuchu.</p>
+        <p>Apram namakkulla gap vandhuchu. Late replies, misunderstandings, sanda, silence — idhellam enna romba hurt pannuchu. Sometimes naan en feelings-a correct-a handle pannala; kovathula Instagram la pannadhu thappu. Adhukkaaga genuinely sorry, Sam. Unna hurt panna enakku intention illa. Aana intention illa nu sonna mattum hurt disappear aagidathu nu enakku theriyum. I'm sorry for my part in it.</p>
+        <p>Un life la Gowtham important nu enakku theriyum. Nee happy-a irukkanum, nalla place aaganum, un dreams ellam achieve pannanum nu manasara wish panren. Un relationship-ku naan disturbance-a irukka virumbala. Un happiness-ku naan respect kudukkuren.</p>
+        <p>Idhu love confession illa, thangoo. Unna oru romba special friend-a miss panren. Namma share pannina emotional bond-a miss panren. Munna maari ellaame irukkanum nu force panna mudiyadhu nu enakku puriyudhu. Aana someday, rendu perukkum comfortable-a irundha, open-a pesi, misunderstandings-a clear panni, konjam konjama nalla friendship rebuild panna mudinja, adhu enakku romba meaningful-a irukkum.</p>
+        <p>Unakku space venumna adhayum respect panren. Nee udane reply pannanum, same maari feel pannanum, illa edhuvum promise pannanum nu expectation illa. Indha letter un mela burden poda illa; en manasula irundhadha honest-a solla dhaan.</p>
+        <p>Thank you for the care you showed me, for the laughs, for trusting me with your stories, and for becoming a beautiful part of my college memories. Nee en life la vandhadhu enakku meaningful. Adha naan marakka maaten.</p>
+        <p>Happy birthday once again, Sam uh, en thangoo. Nalla saapdu, nalla sirichu iru, un dreams-ku full-a effort podu. Unakku edhavadhu kashtam vandha, andha time la unakku en presence comfortable-a irundha, naan friend-a irukka aasai paduren. Andha friendship rendu perukkum nalladha irukkanum — adhu dhaan en wish.</p>
+        <p class="letter-final">You deserve a life full of peace, love, laughter, and people who make you feel safe. Always choose what makes you genuinely happy. 🤍</p>
+        <p class="letter-signoff">With care, always,<br><span>your friend ♡</span></p>
+      </div>
+    </div>
+  </div>
+  <button class="secondary-btn" id="openLetter">Open your letter ♡</button>
+  <p class="tiny-hint">Take your time. There's no need to read it all at once.</p>
+</section>
+
+<section class="birthday-wish section reveal" id="wish">
+  <div class="wish-orb">✧</div>
+  <p class="section-kicker">one last little wish</p>
+  <h2>May this year be<br><em>kind to you.</em></h2>
+  <p class="wish-copy">More reasons to smile. More peaceful days. People who listen. Dreams that come true. And memories that make you think, “I'm glad I lived this moment.”</p>
+  <div class="wish-tamil">“Nee happy-ah iru, thangoo. Unakku nalladhu nadakkanum nu manasara wish panren.”</div>
+  <button class="primary-btn" id="finalReveal">One last surprise <span>♡</span></button>
+  <div class="final-message" id="finalMessage" aria-live="polite">
+    <div class="final-stars">✦ ✧ ✦</div>
+    <h3>Happy Birthday,<br><em>Sam Thangoo!!</em></h3>
+    <p>Some bonds matter, even when life changes their shape.<br>Thank you for being part of my story.</p>
+    <span>Be happy. Be safe. Keep shining. ♡</span>
+    <div class="heart-rain" id="heartRain"></div>
+  </div>
+  <footer>made with care, memories & a little bit of magic ✨</footer>
+</section>
+</main>
+
+<div class="modal" id="memoryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card"><button class="modal-close" id="closeModal" aria-label="Close">×</button><span class="modal-heart">♡</span><h3 id="modalTitle"></h3><p id="modalNote"></p><button class="secondary-btn" id="modalOkay">Keep this memory ♡</button></div>
+</div>
+
+<audio id="bgMusic" loop preload="none">
+  <!-- Add a royalty-free MP3 named music.mp3 to assets/ if desired. -->
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
